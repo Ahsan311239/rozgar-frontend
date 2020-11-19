@@ -1,4 +1,4 @@
-import logo from './logo.svg';
+import React from "react";
 import "./assets/style/bootstrap.min.css";
 import './App.css';
 import "./assets/style/style.scss";
@@ -9,8 +9,13 @@ import productImg from "./assets/img/product.jpg";
 import workerImg from "./assets/img/worker.jpg";
 import becomeWorkerImg from "./assets/img/become_worker.png";
 import signupImg from "./assets/img/signup.png";
+import { Button, Modal } from "react-bootstrap";
 
 function App() {  
+  const [loginShow, setLoginShow] = React.useState(false);
+  const [signupShow, setSignupShow] = React.useState(false);
+
+
   return (
     <div>
 
@@ -22,14 +27,13 @@ function App() {
 
             <Navbar bg="light" variant="light" className="bg-transparent">
               <Navbar.Brand href="#home">LOGO</Navbar.Brand>
-
               <Nav className="ml-auto">
                 <Nav.Link href="#home">Location</Nav.Link>
                 <Nav.Link href="#features">Service</Nav.Link>
-                <Nav.Link href="#pricing">Login</Nav.Link>
+                <Nav.Link href="#pricing"   onClick={() => setLoginShow(true)} >Login</Nav.Link>
+                <Nav.Link href="#new"   onClick={() => setSignupShow(true)} >Signup</Nav.Link>
                 <Nav.Link href="#pricing" className="btn header-btn rounded-0 rounded px-3" >Become a Worker</Nav.Link>
               </Nav>
-
             </Navbar>
 
             <div>
@@ -259,11 +263,9 @@ function App() {
                 </div>
             </div>
 
-
           </div>
         </div>
       </div>
-
 
         <div className="sec-3 pt-5">
           <div className="container">
@@ -290,15 +292,17 @@ function App() {
         <div className="sec-4 pt-5">
           <div className="container">
             <div className="row">
-              <div className="col-md-6">
+
+              <div className="col-md-6" style={{ borderRight: `2px solid 	#DCDCDC` }}>
                 <div className="h-100 d-flex justify-content-center align-items-center">
                    <div className="text-center">
-                   <img  src={signupImg} className="img img-fluid m-auto" style={{ display: "block" }} ></img> 
-                   <p className="mt-3">Hear that? The sweet sigh of relief. Start getting more done.</p>
-                   <a className="py-2 px-5 mt-4 rounded-0 text-white btn bg-pri" >Signup</a>
+                    <img  src={signupImg} className="img img-fluid m-auto" style={{ display: "block" }} ></img> 
+                    <p className="mt-3">Hear that? The sweet sigh of relief. Start getting more done.</p>
+                    <a className="py-2 px-5 mt-4 rounded-0 text-white btn bg-pri" >Signup</a>
                    </div>
                 </div>
               </div>
+
               <div className="col-md-6">
                 <div className="h-100 d-flex justify-content-center align-items-center">
                     <div className="text-center">
@@ -308,6 +312,7 @@ function App() {
                    </div>
                 </div>
               </div>
+
             </div>
           </div>
         </div>
@@ -345,6 +350,58 @@ function App() {
               </div>
           </div>
         </div>
+
+
+        <Modal
+          size="md"
+          show={loginShow}
+          onHide={() => setLoginShow(false)}
+          aria-labelledby="example-modal-sizes-title-sm"
+        >
+          <Modal.Header closeButton>
+            <Modal.Title id="example-modal-sizes-title-sm text-center">
+              Login
+            </Modal.Title>
+          </Modal.Header>
+          <Modal.Body>
+            <form>
+              <label>Username: </label>
+              <input type="text" className="form-control mb-3 rounded-0" placeholder="Enter Email" ></input>
+              <label>Password: </label>
+              <input type="password" className="form-control mb-3 rounded-0" placeholder="Enter password" ></input>
+              <input type="Submit" className="form-control mb-4 rounded-0 btn btn-block bg-pri text-white" placeholder="Enter password" ></input>
+            </form>
+            <a className="rounded-0 btn mb-1  btn-block py-2 bg-danger text-white" >Signin Google</a>
+            <a className="rounded-0 btn btn-block bg-primary py-2 text-white" >Signin Facebook</a>
+          </Modal.Body>
+      </Modal>
+      <Modal
+        size="md"
+        show={signupShow}
+        onHide={() => setSignupShow(false)}
+        aria-labelledby="example-modal-sizes-title-lg"
+      >
+        <Modal.Header closeButton>
+          <Modal.Title id="example-modal-sizes-title-lg">
+            User Signup
+          </Modal.Title>
+        </Modal.Header>
+        <Modal.Body>
+          <form>
+            <label>Username: </label>
+            <input type="text" className="form-control mb-3 rounded-0" placeholder="Enter Email" ></input>
+            <label>Password: </label>
+            <input type="password" className="form-control mb-3 rounded-0" placeholder="Enter password" ></input>
+            <label>Email: </label>
+            <input type="text" className="form-control mb-3 rounded-0" placeholder="Enter Email" ></input>
+            <label>CNIC: </label>
+            <input type="text" className="form-control mb-3 rounded-0" placeholder="Enter cnic" ></input>
+            <input type="Submit" className="form-control mb-4 rounded-0 btn btn-block bg-pri text-white" placeholder="Enter password" ></input>
+          </form>
+          <a className="rounded-0 btn mb-1  btn-block py-2 bg-danger text-white" >Signin Google</a>
+          <a className="rounded-0 btn btn-block bg-primary py-2 text-white" >Signin Facebook</a>
+        </Modal.Body>
+      </Modal>
 
 
     </div>
