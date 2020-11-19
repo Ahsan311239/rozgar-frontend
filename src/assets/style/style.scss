@@ -10,6 +10,13 @@ p{
     color: $clrText !important;
 }
 
+.position-fixed{
+    position: fixed;
+    bottom: 15px;
+    left: 15px;
+    z-index: 2;
+}
+
 .header-btn {
   border: 1px solid $crlPri;
   &:hover{
@@ -41,6 +48,52 @@ p{
             height: 200px;
             &:hover{
                 cursor: pointer;
+            }
+        }
+    }
+}
+
+.section-worker-card{
+    .worker-card{
+        height: 400px;
+        .one{
+            border-bottom: 1px solid lightgray;
+
+            .backImg{
+                height: 100px;
+                width: 100px;
+                background-position: center;
+                background-size: cover;
+                background-repeat: no-repeat;
+            }
+        }
+        .two{
+            border-bottom: 1px solid lightgray;
+        }
+    }
+}
+
+.sec-4{
+    .row{
+        height: 450px ;
+
+    }
+}
+
+.sec-5{
+    .btn-container{
+        .btn-new{
+            border: 1px solid $crlPri;
+            color: $crlPri;
+            transition: 0.2 ease-in-out;
+            text-decoration: none;
+            margin-right: 15px;
+            float: left;
+    
+            &:hover{
+                border: 1px solid $crlPri ;
+                background: $crlPri;
+                color: white ;
             }
         }
     }
