@@ -293,7 +293,7 @@ function App() {
           <div className="container">
             <div className="row">
 
-              <div className="col-md-6" style={{ borderRight: `2px solid 	#DCDCDC` }}>
+              <div className="col-md-6" style={{ borderRight: `1px solid 	#F0F0F0` }}>
                 <div className="h-100 d-flex justify-content-center align-items-center">
                    <div className="text-center">
                     <img  src={signupImg} className="img img-fluid m-auto" style={{ display: "block" }} ></img> 
@@ -359,20 +359,22 @@ function App() {
           aria-labelledby="example-modal-sizes-title-sm"
         >
           <Modal.Header closeButton>
+            <div></div>
             <Modal.Title id="example-modal-sizes-title-sm text-center">
               Login
             </Modal.Title>
           </Modal.Header>
           <Modal.Body>
             <form>
-              <label>Username: </label>
+              <label className="mb-0">Username: </label>
               <input type="text" className="form-control mb-3 rounded-0" placeholder="Enter Email" ></input>
-              <label>Password: </label>
+              <label className="mb-0">Password: </label>
               <input type="password" className="form-control mb-3 rounded-0" placeholder="Enter password" ></input>
-              <input type="Submit" className="form-control mb-4 rounded-0 btn btn-block bg-pri text-white" placeholder="Enter password" ></input>
+              <input type="Submit" className="form-control mb-3 rounded-0 btn btn-block bg-pri text-white" placeholder="Enter password" ></input>
+              <hr></hr>
             </form>
-            <a className="rounded-0 btn mb-1  btn-block py-2 bg-danger text-white" >Signin Google</a>
-            <a className="rounded-0 btn btn-block bg-primary py-2 text-white" >Signin Facebook</a>
+            <a className="rounded-0 btn mb-0 mt-3 btn-block py-2 bg-danger text-white" >Signin Google</a>
+            <a className="rounded-0 btn mt-1 btn-block bg-primary py-2 text-white" >Signin Facebook</a>
           </Modal.Body>
       </Modal>
       <Modal
@@ -388,18 +390,19 @@ function App() {
         </Modal.Header>
         <Modal.Body>
           <form>
-            <label>Username: </label>
+            <label className="mb-0">Username: </label>
             <input type="text" className="form-control mb-3 rounded-0" placeholder="Enter Email" ></input>
-            <label>Password: </label>
+            <label className="mb-0">Password: </label>
             <input type="password" className="form-control mb-3 rounded-0" placeholder="Enter password" ></input>
-            <label>Email: </label>
+            <label className="mb-0">Email: </label>
             <input type="text" className="form-control mb-3 rounded-0" placeholder="Enter Email" ></input>
-            <label>CNIC: </label>
+            <label className="mb-0">CNIC: </label>
             <input type="text" className="form-control mb-3 rounded-0" placeholder="Enter cnic" ></input>
-            <input type="Submit" className="form-control mb-4 rounded-0 btn btn-block bg-pri text-white" placeholder="Enter password" ></input>
-          </form>
-          <a className="rounded-0 btn mb-1  btn-block py-2 bg-danger text-white" >Signin Google</a>
-          <a className="rounded-0 btn btn-block bg-primary py-2 text-white" >Signin Facebook</a>
+            <input type="Submit" className="form-control mb-3 rounded-0 btn btn-block bg-pri text-white" placeholder="Enter password" ></input>
+              <hr></hr>
+            </form>
+            <a className="rounded-0 btn mb-0 mt-3 btn-block py-2 bg-danger text-white" >Signup Google</a>
+            <a className="rounded-0 btn mt-1 btn-block bg-primary py-2 text-white" >Signup Facebook</a>
         </Modal.Body>
       </Modal>
 
