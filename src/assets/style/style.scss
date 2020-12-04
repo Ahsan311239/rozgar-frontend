@@ -9,6 +9,9 @@ $clrTextSec: #757575;
 p{
     color: $clrText !important;
 }
+.overflow-y-scroll{
+    overflow-y: scroll;
+}
 
 .position-fixed{
     position: fixed;
@@ -96,5 +99,16 @@ p{
                 color: white ;
             }
         }
+    }
+}
+
+.create-worker-page{
+    .back_img{
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    .pl-10{
+        padding-left: 130px !important;
     }
 }
