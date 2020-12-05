@@ -7,6 +7,7 @@ import CreateWorker from "./pages/CreateWorker";
 import Services from "./pages/Services";
 import Service from "./pages/Service";
 import About from "./pages/About";
+import Contact from "./pages/Contact";
 
 function App() {  
 
@@ -21,7 +22,9 @@ function App() {
 
       {/* <Service /> */}
 
-      <About />
+      {/* <About /> */}
+
+      <Contact />
 
     </div>
   );

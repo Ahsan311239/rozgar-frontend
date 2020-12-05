@@ -180,3 +180,13 @@ p{
         }
     }
 }
+
+.contact-page{
+    .back_grad{
+        background: linear-gradient(90deg, $crlPriDark 70%, #f4f5f7 50%);
+    }
+    .contact-form{
+        border-top-left-radius: 25px;
+        border-bottom-right-radius: 25px;
+    }
+}
