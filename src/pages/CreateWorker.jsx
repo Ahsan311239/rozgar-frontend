@@ -15,7 +15,8 @@ function CreateWorker() {
                                 <iframe width="100%" height="350" src="https://www.youtube.com/embed/35lXWvCuM8o" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                             </div>
                         <h4 className="mb-3">Create worker Form</h4>
-                        <input type="text" placeholder="Enter Name" className="form-control rounded-0 mb-2"/>
+                        {/* <label htmlFor="">Enter your name: </label> */}
+                        <input type="text" placeholder="اپنا نام یہاں لکھیں" className="form-control rounded-0 mb-2"/>
                         <div className="row">
                             <div className="col-6 pr-1">
                                 <input type="text" placeholder="Enter Name" className="form-control rounded-0  mb-2"/>

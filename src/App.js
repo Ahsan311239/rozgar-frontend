@@ -8,13 +8,16 @@ import Services from "./pages/Services";
 import Service from "./pages/Service";
 import About from "./pages/About";
 import Contact from "./pages/Contact";
+import PrivacyPolicy from "./pages/PrivacyPolicy";
+import Help from "./pages/Help";
+import AddBid from "./pages/AddBid";
 
 function App() {  
 
   return (
     <div>
 
-      {/* <Home /> */}
+      <Home />
 
       {/* <CreateWorker /> */}
 
@@ -24,7 +27,13 @@ function App() {
 
       {/* <About /> */}
 
-      <Contact />
+      {/* <Contact /> */}
+
+      {/* <PrivacyPolicy /> */}
+
+      {/* <Help /> */}
+
+      {/* <AddBid /> */}
 
     </div>
   );

@@ -5,7 +5,10 @@ $clrText : #212121;
 $clrTextSec: #757575;
 
 .bg-pri { background: $crlPri; }
-.text-pri { background: $crlPri; }
+.text-pri { color: $crlPri; }
+body{
+    font-family: 'Poppins', sans-serif;
+}
 p{
     color: $clrText !important;
 }
@@ -189,4 +192,48 @@ p{
         border-top-left-radius: 25px;
         border-bottom-right-radius: 25px;
     }
+}
+
+.policy-page{
+    .square-list li{
+        list-style: square outside none;
+    }
+}
+
+.help-page{
+    .card{
+        .card-header{
+            background-color: $crlPri;
+            display: flex;
+            justify-content: space-between;
+            button{
+                color: white;
+                text-decoration: none;
+                font-size: 20px !important;
+            }
+        }
+    }
+}
+
+
+.sec-footer{
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    .overlay{
+        background: rgba( 0,0,0,0.6 );
+    }
+    h3{
+        font-size: 22px !important;
+        color: white;
+    }
+    p{
+        font-size: 15px !important;
+        color: white !important;
+    }
+}
+
+
+.addbid-page{
+
 }
