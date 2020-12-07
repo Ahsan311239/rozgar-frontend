@@ -23,10 +23,10 @@ function Service() {
                 <div className="row pt-5">
                     <div className="col-md-8">
                     <Carousel>
-                        <Carousel.Item interval={1000}>
+                        <Carousel.Item>
                             <div className="back_img" style={{backgroundImage: `url(${Banngerimg1})`}}></div>
                         </Carousel.Item>
-                        <Carousel.Item interval={500}>
+                        <Carousel.Item>
                         <div className="back_img" style={{backgroundImage: `url(${Banngerimg2})`}}></div>
                         </Carousel.Item>
                         <Carousel.Item>
@@ -38,8 +38,7 @@ function Service() {
                     <h5 className="font-weight-bold mt-4">Details</h5>
                     <h5 className="font-weight-bold mt-2">Title: Abdullah Fucker</h5>
                     <h5 className="font-weight-bold mt-2">Description</h5>
-                    <p>Make the most of your purchase with this opportunity. The 4 Marla property you are looking for is now here. The prime location of Adiala Road - Rawalpindi will also ensure that your real estate asset will have great market value. If Rawalpindi is the destination of your dreams, here is a property to get you started! You are not going to find a better property option anywhere in the city for as low as Rs 25,000,000. You can now purchase your Building at an amazing price.
-We are just a call away.</p>
+                    <p>Make the most of your purchase with this opportunity. The 4 Marla property you are looking for is now here. The prime location of Adiala Road - Rawalpindi will also ensure that your real estate asset will have great market value. If Rawalpindi is the destination of your dreams, here is a property to get you started! You are not going to find a better property option anywhere in the city for as low as Rs 25,000,000. You can now purchase your Building at an amazing price. We are just a call away.</p>
                     </div>
 
                     </div>
