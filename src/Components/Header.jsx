@@ -35,7 +35,7 @@ function Header() {
                 <Nav.Link> <Link to="/help" >Help</Link> </Nav.Link>
                 <Nav.Link href="#pricing"   onClick={() => setLoginShow(true)} >Login</Nav.Link>
                 <Nav.Link href="#new"   onClick={() => setSignupShow(true)} >Signup</Nav.Link>
-                <Nav.Link href="#pricing" className="btn header-btn rounded-0 rounded px-3" >Become a Worker</Nav.Link>
+                <Nav.Link> <Link to="/create-worker" className="btn header-btn rounded-0 rounded px-3" >Become a Worker </Link> </Nav.Link>
               </Nav>
             </Navbar>
 

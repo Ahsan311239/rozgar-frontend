@@ -6,19 +6,7 @@ import { Navbar, Nav } from "react-bootstrap";
 function Services() {
   return (
     <div className="services-page container">
-      <Navbar bg="light" variant="light" className="bg-transparent">
-        <Navbar.Brand href="#home">LOGO</Navbar.Brand>
-        <Nav className="ml-auto">
-          <Nav.Link href="#home">Location</Nav.Link>
-          <Nav.Link href="#features">Service</Nav.Link>
-          <Nav.Link href="#pricing">Login</Nav.Link>
-          <Nav.Link href="#new">Signup</Nav.Link>
-          <Nav.Link href="#pricing" className="btn header-btn rounded-0 rounded px-3">
-            Become a Worker
-          </Nav.Link>
-        </Nav>
-      </Navbar>
-
+    
       <div className="sec-services pt-5">
         <div className="container">
           <h4 className=" mb-2">Tranding services</h4>
