@@ -1,239 +1,243 @@
-$crlPriDark : #00796b; 
-$crlPri : #009688;
-$clrLight : #b2dfdb;
-$clrText : #212121;
-$clrTextSec: #757575;
-
-.bg-pri { background: $crlPri; }
-.text-pri { color: $crlPri; }
-body{
-    font-family: 'Poppins', sans-serif;
-}
-p{
-    color: $clrText !important;
-}
-.overflow-y-scroll{
-    overflow-y: scroll;
-}
-
-.position-fixed{
-    position: fixed;
-    bottom: 15px;
-    left: 15px;
-    z-index: 2;
-}
-
-.header-btn {
-  border: 1px solid $crlPri;
-  &:hover{
-    background-color: $crlPri;
-    color: white !important;
-  }
-}
-
-.sec-1{
-    .back_img {
-        background-position: center;
-        background-size: cover;
-        height: 450px;
-        position: relative;
-    }
-    .p-abs {
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-    }
-}
-
-.sec-2{
-    .mini-card{
-        overflow: hidden;
-        img{
-            width: 100%;
-            height: 200px;
-            &:hover{
-                cursor: pointer;
-            }
-        }
-    }
-}
-
-.section-worker-card{
-    .worker-card{
-        height: 400px;
-        .one{
-            border-bottom: 1px solid lightgray;
-
-            .backImg{
-                height: 100px;
-                width: 100px;
-                background-position: center;
-                background-size: cover;
-                background-repeat: no-repeat;
-            }
-        }
-        .two{
-            border-bottom: 1px solid lightgray;
-        }
-    }
-}
-
-.sec-4{
-    .row{
-        height: 450px ;
-
-    }
-}
-
-.sec-5{
-    .btn-container{
-        .btn-new{
-            border: 1px solid $crlPri;
-            color: $crlPri;
-            transition: 0.2 ease-in-out;
-            text-decoration: none;
-            margin-right: 15px;
-            float: left;
-    
-            &:hover{
-                border: 1px solid $crlPri ;
-                background: $crlPri;
-                color: white ;
-            }
-        }
-    }
-}
-
-.create-worker-page{
-    .back_img{
-        background-position: center;
-        background-size: cover;
-        background-repeat: no-repeat;
-    }
-    .pl-10{
-        padding-left: 130px !important;
-    }
-}
-
-.service-page{
-    .carousel{
-        .back_img{
-            background-position: center;
-            background-repeat: no-repeat;
-            background-size: cover;
-            height: 400px;
-        }
-    }
-}
-
-.about-page{
-    .sec-1-about{
-        .back_img{
-            background-position: center;
-            background-repeat: no-repeat;
-            background-size: cover;
-            height: 300px;
-            position: relative;
-            .overlay{
-                background: rgba( 0,0,0,0.3 ) ;
-            }
-            .p-abs{
-                position: absolute;
-                top: 50%;
-                left: 50%;
-                transform: translate(-50%, -50%);
-            }
-        }
-    }
-
-    .sec-3-about{
-        .back_img{
-            background-position: center;
-            background-repeat: no-repeat;
-            background-size: cover;
-            height: 250px;
-        }
-    }
-    .sec-4-about{
-        .back_img{
-            background-position: center;
-            background-repeat: no-repeat;
-            background-size: cover;
-            height: 200px;
-            width: 200px;
-        }
-    }
-    .sec-5-about{
-        .back_img{
-            background-position: center;
-            background-repeat: no-repeat;
-            background-size: cover;
-            height: 500px;
-            position: relative;
-            .overlay{
-                background: rgba( 0,0,0,0.3 ) ;
-            }
-            .p-abs{
-                position: absolute;
-                top: 50%;
-                left: 75%;
-                transform: translate(-50%, -50%);
-            }
-        }
-    }
-}
-
-.contact-page{
-    .back_grad{
-        background: linear-gradient(90deg, $crlPriDark 70%, #f4f5f7 50%);
-    }
-    .contact-form{
-        border-top-left-radius: 25px;
-        border-bottom-right-radius: 25px;
-    }
-}
-
-.policy-page{
-    .square-list li{
-        list-style: square outside none;
-    }
-}
-
-.help-page{
-    .card{
-        .card-header{
-            background-color: $crlPri;
-            display: flex;
-            justify-content: space-between;
-            button{
-                color: white;
-                text-decoration: none;
-                font-size: 20px !important;
-            }
-        }
-    }
-}
-
-
-.sec-footer{
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    .overlay{
-        background: rgba( 0,0,0,0.6 );
-    }
-    h3{
-        font-size: 22px !important;
-        color: white;
-    }
-    p{
-        font-size: 15px !important;
-        color: white !important;
-    }
-}
-
-
-.addbid-page{
-    
-}
+                            $crlPriDark: #00796b;
+                            $crlPri: #009688;
+                            $clrLight: #b2dfdb;
+                            $clrText: #212121;
+                            $clrTextSec: #757575;
+                            .bg-pri {
+                                background: $crlPri;
+                            }
+                            
+                            .text-pri {
+                                color: $crlPri;
+                            }
+                            
+                            body {
+                                font-family: 'Poppins', sans-serif;
+                            }
+                            
+                            p {
+                                color: $clrText !important;
+                            }
+                            
+                            .overflow-y-scroll {
+                                overflow-y: scroll;
+                            }
+                            
+                            .position-fixed {
+                                position: fixed;
+                                bottom: 15px;
+                                left: 15px;
+                                z-index: 2;
+                            }
+                            
+                            .header-btn {
+                                border: 1px solid $crlPri;
+                                &:hover {
+                                    background-color: $crlPri;
+                                    color: white !important;
+                                }
+                            }
+                            
+                            .sec-1 {
+                                .back_img {
+                                    background-position: center;
+                                    background-size: cover;
+                                    height: 450px;
+                                    position: relative;
+                                }
+                                .p-abs {
+                                    position: absolute;
+                                    top: 50%;
+                                    left: 50%;
+                                    transform: translate(-50%, -50%);
+                                }
+                            }
+                            
+                            .sec-2 {
+                                .mini-card {
+                                    overflow: hidden;
+                                    img {
+                                        width: 100%;
+                                        height: 200px;
+                                        &:hover {
+                                            cursor: pointer;
+                                        }
+                                    }
+                                }
+                            }
+                            
+                            .section-worker-card {
+                                .worker-card {
+                                    height: 400px;
+                                    .one {
+                                        border-bottom: 1px solid lightgray;
+                                        .backImg {
+                                            height: 100px;
+                                            width: 100px;
+                                            background-position: center;
+                                            background-size: cover;
+                                            background-repeat: no-repeat;
+                                        }
+                                    }
+                                    .two {
+                                        border-bottom: 1px solid lightgray;
+                                    }
+                                }
+                            }
+                            
+                            .sec-4 {
+                                .row {
+                                    height: 450px;
+                                }
+                            }
+                            
+                            .sec-5 {
+                                .btn-container {
+                                    .btn-new {
+                                        border: 1px solid $crlPri;
+                                        color: $crlPri;
+                                        transition: 0.2 ease-in-out;
+                                        text-decoration: none;
+                                        margin-right: 15px;
+                                        float: left;
+                                        &:hover {
+                                            border: 1px solid $crlPri;
+                                            background: $crlPri;
+                                            color: white;
+                                        }
+                                    }
+                                    &:after {
+                                        content: "";
+                                        clear: both;
+                                        display: table;
+                                    }
+                                }
+                            }
+                            
+                            .create-worker-page {
+                                .back_img {
+                                    background-position: center;
+                                    background-size: cover;
+                                    background-repeat: no-repeat;
+                                }
+                                .pl-10 {
+                                    padding-left: 130px !important;
+                                }
+                            }
+                            
+                            .service-page {
+                                .carousel {
+                                    .back_img {
+                                        background-position: center;
+                                        background-repeat: no-repeat;
+                                        background-size: cover;
+                                        height: 400px;
+                                    }
+                                }
+                            }
+                            
+                            .about-page {
+                                .sec-1-about {
+                                    .back_img {
+                                        background-position: center;
+                                        background-repeat: no-repeat;
+                                        background-size: cover;
+                                        height: 300px;
+                                        position: relative;
+                                        .overlay {
+                                            background: rgba( 0, 0, 0, 0.3);
+                                        }
+                                        .p-abs {
+                                            position: absolute;
+                                            top: 50%;
+                                            left: 50%;
+                                            transform: translate(-50%, -50%);
+                                        }
+                                    }
+                                }
+                                .sec-3-about {
+                                    .back_img {
+                                        background-position: center;
+                                        background-repeat: no-repeat;
+                                        background-size: cover;
+                                        height: 250px;
+                                    }
+                                }
+                                .sec-4-about {
+                                    .back_img {
+                                        background-position: center;
+                                        background-repeat: no-repeat;
+                                        background-size: cover;
+                                        height: 200px;
+                                        width: 200px;
+                                    }
+                                }
+                                .sec-5-about {
+                                    .back_img {
+                                        background-position: center;
+                                        background-repeat: no-repeat;
+                                        background-size: cover;
+                                        height: 500px;
+                                        position: relative;
+                                        .overlay {
+                                            background: rgba( 0, 0, 0, 0.3);
+                                        }
+                                        .p-abs {
+                                            position: absolute;
+                                            top: 50%;
+                                            left: 75%;
+                                            transform: translate(-50%, -50%);
+                                        }
+                                    }
+                                }
+                            }
+                            
+                            .contact-page {
+                                .back_grad {
+                                    background: linear-gradient(90deg, $crlPriDark 70%, #f4f5f7 50%);
+                                }
+                                .contact-form {
+                                    border-top-left-radius: 25px;
+                                    border-bottom-right-radius: 25px;
+                                }
+                            }
+                            
+                            .policy-page {
+                                .square-list li {
+                                    list-style: square outside none;
+                                }
+                            }
+                            
+                            .help-page {
+                                .card {
+                                    .card-header {
+                                        background-color: $crlPri;
+                                        display: flex;
+                                        justify-content: space-between;
+                                        button {
+                                            color: white;
+                                            text-decoration: none;
+                                            font-size: 20px !important;
+                                        }
+                                    }
+                                }
+                            }
+                            
+                            .sec-footer {
+                                background-position: center;
+                                background-size: cover;
+                                background-repeat: no-repeat;
+                                .overlay {
+                                    background: rgba( 0, 0, 0, 0.6);
+                                }
+                                h3 {
+                                    font-size: 22px !important;
+                                    color: white;
+                                }
+                                p {
+                                    font-size: 15px !important;
+                                    color: white !important;
+                                }
+                            }
+                            
+                            .addbid-page {}

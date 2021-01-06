@@ -9,16 +9,7 @@ function Service() {
   return (
     <div className="service-page">
             <div className="container">
-                <Navbar bg="light" variant="light" className="bg-transparent">
-                    <Navbar.Brand href="#home">LOGO</Navbar.Brand>
-                    <Nav className="ml-auto">
-                        <Nav.Link href="#home">Location</Nav.Link>
-                        <Nav.Link href="#features">Service</Nav.Link>
-                        <Nav.Link href="#pricing" >Login</Nav.Link>
-                        <Nav.Link href="#new" >Signup</Nav.Link>
-                        <Nav.Link href="#pricing" className="btn header-btn rounded-0 rounded px-3" >Become a Worker</Nav.Link>
-                    </Nav>
-                </Navbar>
+                
 
                 <div className="row pt-5">
                     <div className="col-md-8">
@@ -36,7 +27,7 @@ function Service() {
                     {/* details */}
                     <div className="border">
                     <h5 className="font-weight-bold mt-4">Details</h5>
-                    <h5 className="font-weight-bold mt-2">Title: Abdullah Fucker</h5>
+                    <h5 className="font-weight-bold mt-2">Title: Abdullah</h5>
                     <h5 className="font-weight-bold mt-2">Description</h5>
                     <p>Make the most of your purchase with this opportunity. The 4 Marla property you are looking for is now here. The prime location of Adiala Road - Rawalpindi will also ensure that your real estate asset will have great market value. If Rawalpindi is the destination of your dreams, here is a property to get you started! You are not going to find a better property option anywhere in the city for as low as Rs 25,000,000. You can now purchase your Building at an amazing price. We are just a call away.</p>
                     </div>

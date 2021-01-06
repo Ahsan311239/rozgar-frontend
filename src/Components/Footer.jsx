@@ -4,7 +4,7 @@ function Footer() {
   return (
     <div>
       <div className="sec-footer">
-        <div className="overlay py-5 h-100 w-100">
+        <div className="overlay py-3 h-100 w-100">
           <div className="container">
             <div className="row">
               <div className="col-md-4">

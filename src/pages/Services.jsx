@@ -2,6 +2,7 @@ import React from "react";
 
 import productImg from "./../assets/img/product.jpg";
 import { Navbar, Nav } from "react-bootstrap";
+import { Link } from "react-router-dom";
 
 function Services() {
   return (
@@ -14,7 +15,7 @@ function Services() {
             <div className="row">
               <div className="col-md-3 mb-4">
                 <div className="mini-card rounded shadow ">
-                  <img src={productImg} className="img img-fluid" />
+                  <Link to="/service" > <img src={productImg} className="img img-fluid"/> </Link>
                   <div className="text text-center">
                     <p className="mb-0 mt-2">Assamble desk</p>
                     <p className="text-secondary"> Avg -price Rs500-Rs2000 </p>
@@ -24,7 +25,7 @@ function Services() {
 
               <div className="col-md-3 mb-4">
                 <div className="mini-card rounded shadow">
-                  <img src={productImg} className="img img-fluid" />
+                <Link to="/service" > <img src={productImg} className="img img-fluid"/> </Link>
                   <div className="text text-center">
                     <p className="mb-0 mt-2">Assamble desk</p>
                     <p className="text-secondary"> Avg -price Rs500-Rs2000 </p>
@@ -34,7 +35,7 @@ function Services() {
 
               <div className="col-md-3 mb-4">
                 <div className="mini-card rounded shadow">
-                  <img src={productImg} className="img img-fluid" />
+                  <Link to="/service" > <img src={productImg} className="img img-fluid"/> </Link>
                   <div className="text text-center">
                     <p className="mb-0 mt-2">Assamble desk</p>
                     <p className="text-secondary"> Avg -price Rs500-Rs2000 </p>
@@ -44,7 +45,7 @@ function Services() {
 
               <div className="col-md-3 mb-4">
                 <div className="mini-card rounded shadow">
-                  <img src={productImg} className="img img-fluid" />
+                <Link to="/service" > <img src={productImg} className="img img-fluid"/> </Link>
                   <div className="text text-center">
                     <p className="mb-0 mt-2">Assamble desk</p>
                     <p className="text-secondary"> Avg -price Rs500-Rs2000 </p>

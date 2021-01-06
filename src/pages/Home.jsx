@@ -9,8 +9,10 @@ import signupImg from "./../assets/img/signup.png";
 
 import { Navbar, Nav } from "react-bootstrap";
 import { Button, Modal } from "react-bootstrap";
+import { Link }  from "react-router-dom";
 
 function Home() {  
+
 
   const [loginShow, setLoginShow] = React.useState(false);
   const [signupShow, setSignupShow] = React.useState(false);
@@ -19,7 +21,7 @@ function Home() {
     <div>
 
         <div className="position-fixed" >
-          <a className=" rounded-pill py-1 px-4 btn text-white  bg-pri " >Help?</a>
+          <Link to="/help" className=" rounded-pill py-1 px-4 btn text-white  bg-pri " >Help?</Link>
         </div>
 
         <div className="container">
@@ -55,7 +57,7 @@ function Home() {
             <div className="row">
               <div className="col-md-3 mb-4" >
                 <div className="mini-card rounded shadow ">
-                  <img src={productImg} className="img img-fluid" />
+                <Link to="/service" > <img src={productImg} className="img img-fluid"/> </Link>
                   <div className="text text-center">
                       <p className="mb-0 mt-2">Assamble desk</p>
                       <p className="text-secondary"> Avg -price Rs500-Rs2000 </p>
@@ -65,7 +67,7 @@ function Home() {
 
               <div className="col-md-3 mb-4" >
                 <div className="mini-card rounded shadow">
-                  <img src={productImg} className="img img-fluid" />
+                <Link to="/service" > <img src={productImg} className="img img-fluid"/> </Link>
                   <div className="text text-center">
                       <p className="mb-0 mt-2">Assamble desk</p>
                       <p className="text-secondary"> Avg -price Rs500-Rs2000 </p>
@@ -75,7 +77,7 @@ function Home() {
 
               <div className="col-md-3 mb-4" >
                 <div className="mini-card rounded shadow">
-                  <img src={productImg} className="img img-fluid" />
+                <Link to="/service" > <img src={productImg} className="img img-fluid"/> </Link>
                   <div className="text text-center">
                       <p className="mb-0 mt-2">Assamble desk</p>
                       <p className="text-secondary"> Avg -price Rs500-Rs2000 </p>
@@ -169,7 +171,7 @@ function Home() {
                         <div className="backImg mb-2" style={{ backgroundImage: `url(${workerImg})` }}>
                         </div>
                         <div>
-                          <p className="pl-3 mb-0">Ali Raza</p>
+                          <p className="pl-3 mb-0">Abdullah Tanveer</p>
                           <p className="pl-3 text-secondary">Developer</p>
                         </div>
                     </div>
@@ -198,7 +200,7 @@ function Home() {
                         <div className="backImg mb-2" style={{ backgroundImage: `url(${workerImg})` }}>
                         </div>
                         <div>
-                          <p className="pl-3 mb-0">Ali Raza</p>
+                          <p className="pl-3 mb-0">Muhammad Ahsan</p>
                           <p className="pl-3 text-secondary">Developer</p>
                         </div>
                     </div>
@@ -286,7 +288,7 @@ function Home() {
                    <div className="text-center">
                     <img  src={signupImg} className="img img-fluid m-auto" style={{ display: "block" }} ></img> 
                     <p className="mt-3">Hear that? The sweet sigh of relief. Start getting more done.</p>
-                    <a className="py-2 px-5 mt-4 rounded-0 text-white btn bg-pri" >Signup</a>
+                    <span className="py-2 px-5 mt-4 rounded-0 text-white btn bg-pri" onClick={() => setSignupShow(true)} >Signup</span>
                    </div>
                 </div>
               </div>
@@ -296,7 +298,7 @@ function Home() {
                     <div className="text-center">
                       <img  src={becomeWorkerImg} className="img img-fluid  m-auto" style={{ display: "block" }} ></img> 
                       <p className="mt-3">Grow your own business while saving the day for busy neighbors.</p>
-                      <a className="py-2 px-5 mt-3 rounded-0 text-white btn bg-pri" >Become Worker</a>
+                      <Link to="/create-worker" className="py-2 px-5 mt-4 rounded-0 text-white btn bg-pri" >Become a Worker </Link>
                    </div>
                 </div>
               </div>
@@ -308,8 +310,8 @@ function Home() {
         <div className="sec-5">
           <div className="container">
             <h2> Featured Tasks </h2>
-              <div className="btn-container ">
-                <a className=" px-4 py-2 mb-3 rounded-0 btn btn-new " >Help Moving Help Moving</a>
+              <div className="btn-container">
+                <a className=" px-4 py-2 mb-3 rounded-0 btn btn-new " >Help Moving</a>
                 <a className=" px-4 py-2 mb-3 rounded-0 btn btn-new " >Help Moving</a>
                 <a className=" px-4 py-2 mb-3 rounded-0 btn btn-new " >Help Moving</a>
                 <a className=" px-4 py-2 mb-3 rounded-0 btn btn-new " >Help Moving</a>
@@ -340,7 +342,39 @@ function Home() {
         </div>
 
 
-    </div>
+        <Modal
+        size="md"
+        show={signupShow}
+        onHide={() => setSignupShow(false)}
+        aria-labelledby="example-modal-sizes-title-lg"
+      >
+        <Modal.Header closeButton>
+          <Modal.Title id="example-modal-sizes-title-lg">
+            User Signup
+          </Modal.Title>
+        </Modal.Header>
+        <Modal.Body>
+          <form>
+            <label className="mb-0">Username: </label>
+            <input type="text" className="form-control mb-3 rounded-3" placeholder="Enter Email" ></input>
+            <label className="mb-0">Password: </label>
+            <input type="password" className="form-control mb-3 rounded-3" placeholder="Enter password" ></input>
+            <label className="mb-0">Email: </label>
+            <input type="text" className="form-control mb-3 rounded-3" placeholder="Enter Email" ></input>
+            <label className="mb-0">CNIC: </label>
+            <input type="text" className="form-control mb-3 rounded-3" placeholder="Enter cnic" ></input>
+            <input type="Submit" className="form-control mb-3 rounded-3 btn btn-block bg-pri text-white" placeholder="Enter password" ></input>
+              <hr></hr>
+            </form>
+            <a className="rounded-0 btn mb-0 mt-3 btn-block py-2 bg-danger text-white" >Signup Google</a>
+            <a className="rounded-0 btn mt-1 btn-block bg-primary py-2 text-white" >Signup Facebook</a>
+        </Modal.Body>
+      </Modal>
+       </div>
+
+
+
+
   );
 }
 

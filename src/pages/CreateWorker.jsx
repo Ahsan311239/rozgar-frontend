@@ -19,15 +19,15 @@ function CreateWorker() {
                         <input type="text" placeholder="اپنا نام یہاں لکھیں" className="form-control rounded-0 mb-2"/>
                         <div className="row">
                             <div className="col-6 pr-1">
-                                <input type="text" placeholder="Enter Name" className="form-control rounded-0  mb-2"/>
+                                <input type="text" placeholder="اپنا نام یہاں لکھیں" className="form-control rounded-0  mb-2"/>
                             </div>
                             <div className="col-6 pl-1">
-                                <input type="text" placeholder="Enter Name" className="form-control rounded-0  mb-2"/>
+                                <input type="text" placeholder="اپنا نام یہاں لکھیں" className="form-control rounded-0  mb-2"/>
                             </div>
                         </div>
-                        <input type="text" placeholder="Enter Name" className="form-control rounded-0 mb-2"/>
-                        <input type="text" placeholder="Enter Name" className="form-control rounded-0 mb-2"/>
-                        <input type="text" placeholder="Enter Name" className="form-control rounded-0 mb-3"/>
+                        <input type="text" placeholder="اپنا نام یہاں لکھیں" className="form-control rounded-0 mb-2"/>
+                        <input type="text" placeholder="اپنا نام یہاں لکھیں" className="form-control rounded-0 mb-2"/>
+                        <input type="text" placeholder="اپنا نام یہاں لکھیں" className="form-control rounded-0 mb-3"/>
 
                         <a href="" className="btn btn-block rounded-0 bg-pri text-white">Create Worker</a>
                     </form>

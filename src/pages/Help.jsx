@@ -8,8 +8,8 @@ const PrivacyPolicy = () => {
         <div className="help-page">
             
             <div className="container my-5 py-4 px-3 border">
-                <h3>TaskRabbit Global Privacy Policy</h3>
-                <p>Last Updated: December 18, 2019</p>
+                <h3>Rozgaar Privacy Policy</h3>
+                
 
                 <Accordion defaultActiveKey="0">
 
@@ -21,7 +21,12 @@ const PrivacyPolicy = () => {
                         </Accordion.Toggle>
                         </Card.Header>
                         <Accordion.Collapse eventKey="0">
-                        <Card.Body> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Accusamus culpa perferendis dicta consequuntur adipisci cumque!</Card.Body>
+                        <Card.Body> 
+                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Accusamus culpa perferendis dicta consequuntur adipisci cumque!
+                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Accusamus culpa perferendis dicta consequuntur adipisci cumque!
+                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Accusamus culpa perferendis dicta consequuntur adipisci cumque!
+                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Accusamus culpa perferendis dicta consequuntur adipisci cumque!
+                        </Card.Body>
                         </Accordion.Collapse>
                     </Card>
 
